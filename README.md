@@ -1,13 +1,25 @@
 # PLUG CITY 225
 
-Boutique statique de présentation et de commandes WhatsApp.
+Boutique statique de mode, hébergée avec GitHub Pages. Le catalogue, le panier et la commande WhatsApp fonctionnent dans le navigateur; aucun paiement en ligne n’est connecté.
 
-## Publication
+## Publier une modification
 
-Le site est publié avec GitHub Pages. Chaque changement des fichiers du dépôt est ensuite déployé par GitHub Pages.
+1. Modifie les fichiers dans Visual Studio Code.
+2. Envoie les fichiers concernés dans le dépôt GitHub `plugcity2255-spec/plug-city-225` et valide le changement sur `main`.
+3. GitHub Pages publie automatiquement la nouvelle version après la fin de son déploiement.
 
-## Modifier le catalogue
+Pour voir le site sur l’ordinateur, ouvre `index.html` dans un navigateur. Vérifie aussi le rendu sur téléphone après chaque changement de style.
 
-L’interface publique de gestion a été retirée. Pour modifier les produits, les prix ou les textes, il faut éditer le catalogue source dans `app-v2.js`, puis publier les changements sur GitHub. L’espace de gestion ne doit pas être remis dans le site public sans authentification côté serveur.
+## Modifier les produits
 
-GitHub Pages héberge des fichiers statiques : les visiteurs peuvent consulter le code et les données livrés au navigateur. Les modifications faites dans les outils du navigateur ou le stockage local d’un client ne changent que sa propre copie du site. Pour une gestion privée synchronisée entre appareils, il faut connecter une API avec authentification et une base de données.
+Les produits de démonstration se trouvent dans le tableau `seedProducts` de `app-v2.js`. Modifie le nom, la catégorie, le prix, la description, les tailles et l’image, puis publie le fichier. Les photos locales doivent être placées dans le dépôt; la photo Air Force One optimisée est `air-force-one.webp` à la racine.
+
+Le panneau public de gestion a été retiré. Le catalogue publié vient du code du site; le navigateur ne peut plus remplacer les prix officiels depuis son stockage local. Seul le panier du visiteur est conservé sur son appareil. Pour un véritable tableau de bord privé et synchronisé, il faut un service externe avec authentification, base de données et stockage d’images.
+
+## Commandes et paiements
+
+Le panier prépare une demande sur WhatsApp au numéro de la boutique. Le total est indicatif : le vendeur confirme le prix, la disponibilité et les frais de livraison avant validation. Le site ne traite pas les paiements et ne conserve pas les coordonnées des clients dans une base centrale. N’annonce aucun paiement Mobile Money comme actif tant qu’un prestataire n’est pas connecté et configuré.
+
+## Limites de sécurité
+
+GitHub Pages sert des fichiers publics. Les prix transmis depuis le navigateur ne sont pas une source officielle vérifiée côté serveur; ils ne doivent pas servir à valider un paiement. Ne place aucune clé privée ou donnée de compte dans les fichiers. Pour enregistrer des commandes, gérer les stocks ou confirmer un paiement, ajoute une API sécurisée avec authentification, validation côté serveur et journalisation.

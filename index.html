@@ -5,19 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#171813">
   <meta name="description" content="PLUG CITY 225 — la sélection mode qui fait vibrer Abidjan. Sneakers, looks et accessoires tendance.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://plugcity2255-spec.github.io/plug-city-225/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CI">
+  <meta property="og:site_name" content="PLUG CITY 225">
+  <meta property="og:title" content="PLUG CITY 225 — Le style en mouvement">
+  <meta property="og:description" content="Sneakers, looks et accessoires tendance à Abidjan. Découvre la sélection et commande directement sur WhatsApp.">
+  <meta property="og:url" content="https://plugcity2255-spec.github.io/plug-city-225/">
+  <meta property="og:image" content="https://plugcity2255-spec.github.io/plug-city-225/air-force-one.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <title>PLUG CITY 225 — Le style en mouvement</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=public-no-admin-1">
-  <script src="app-v2.js?v=public-no-admin-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=store-audit-2">
+  <script src="app-v2.js?v=store-audit-2" defer></script>
 </head>
 <body>
   <div class="announcement">ABIDJAN, TON NOUVEAU SPOT MODE <span>✳</span> Commande facile sur WhatsApp</div>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="PLUG CITY 225, accueil"><span class="brand-mark">P<span>✳</span></span><span class="brand-name">PLUG CITY <b>225</b></span></a>
-    <nav class="main-nav" aria-label="Navigation principale"><a href="#shop">La sélection</a><a href="#story">Notre vibe</a><a href="#deals">Les bons plans</a></nav>
-    <div class="header-actions"><button class="icon-button search-toggle" aria-label="Rechercher" title="Rechercher">⌕</button><button class="cart-button" id="open-cart"><span>Mon panier</span><span class="cart-count" id="cart-count">0</span></button><button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">☰</button></div>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale"><a href="#shop">La sélection</a><a href="#story">Notre vibe</a><a href="#deals">Les bons plans</a></nav>
+    <div class="header-actions"><button class="icon-button search-toggle" aria-label="Rechercher" title="Rechercher">⌕</button><button class="cart-button" id="open-cart" aria-controls="cart-drawer" aria-haspopup="dialog"><span>Mon panier</span><span class="cart-count" id="cart-count">0</span></button><button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-controls="main-nav" aria-expanded="false">☰</button></div>
   </header>
   <main>
     <section class="hero" aria-labelledby="hero-title">
@@ -29,7 +39,7 @@
         <div class="hero-actions reveal"><a class="button button-light magnetic" href="#shop">Explorer la sélection <span>↗</span></a><a class="text-link" href="#story">Découvrir la boutique <span>↓</span></a></div>
         <div class="hero-proof reveal"><div class="avatar-stack"><span>✦</span><span>✦</span><span>✦</span></div><span>La vibe d’Abidjan, <b>à ton pied.</b></span></div>
       </div>
-      <div class="hero-art reveal"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Sneaker rouge tendance" fetchpriority="high"><div class="photo-sticker">DROP<br><b>225</b></div></div><div class="hero-side-note">NOUVELLE SAISON <span>✳</span> NOUVELLE ÉNERGIE</div><div class="hero-caption"><span>01 / 04</span><span>Fais ta place.</span></div></div>
+      <div class="hero-art reveal"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Sneaker rouge tendance" fetchpriority="high"><div class="photo-sticker">DROP<br><b>225</b></div></div><div class="hero-side-note">NOUVELLE SAISON <span>✳</span> NOUVELLE ÉNERGIE</div><div class="hero-caption"><span>SÉLECTION / ABJ</span><span>Fais ta place.</span></div></div>
       <div class="hero-bottom"><span>ABIDJAN · CÔTE D’IVOIRE</span><span class="scroll-cue">FAIS DÉFILER <b>↓</b></span><span>05°20′N 04°01′W</span></div>
     </section>
     <section class="ticker" aria-label="PLUG CITY 225"><div class="ticker-track"><span>FRAIS. FORT. IVOIRIEN.</span><b>✳</b><span>TON STYLE, TON TERRAIN.</span><b>✳</b><span>FRAIS. FORT. IVOIRIEN.</span><b>✳</b><span>TON STYLE, TON TERRAIN.</span><b>✳</b></div></section>
@@ -38,13 +48,13 @@
       <div class="shop-toolbar reveal"><div class="category-tabs" id="category-tabs"><button class="category-tab active" data-category="Tout">Tout voir <span>0</span></button><button class="category-tab" data-category="Vêtements">Vêtements</button><button class="category-tab" data-category="Chaussures">Chaussures</button><button class="category-tab" data-category="Accessoires">Accessoires</button><button class="category-tab" data-category="Autres">Autres</button></div><div class="shop-controls"><label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Chercher un article…" aria-label="Chercher un article"></label><select id="sort-select" aria-label="Trier les produits"><option value="featured">À la une</option><option value="price-asc">Prix croissant</option><option value="price-desc">Prix décroissant</option></select></div></div>
       <div class="product-grid" id="products" aria-live="polite"></div><p class="empty-state" id="empty-state" hidden>Aucun article trouvé. Essaie une autre recherche.</p>
     </section>
-    <section class="story section-wrap" id="story"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85" alt="Sélection mode urbaine" loading="lazy"><span class="image-label">ABJ / 225</span></div><div class="story-copy reveal"><p class="eyebrow">Du bitume à ta vibe</p><h2>La rue nous inspire.<br><em>Le style nous rassemble.</em></h2><p>PLUG CITY 225, c’est la sélection qui te ressemble. Des pièces tendance, des prix accessibles et un service de proximité, pensé pour la vraie vie à Abidjan.</p><a href="#shop" class="button button-dark magnetic">Trouve ta pièce <span>↗</span></a><div class="stat-row"><div><strong data-count="100" data-suffix="%">0</strong><span>Vibe locale</span></div><div><strong data-count="225" data-prefix="#">0</strong><span>Notre terrain</span></div><div><strong data-count="24" data-suffix="/7">0</strong><span>En ligne</span></div></div></div></section>
+    <section class="story section-wrap" id="story"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85" alt="Sélection mode urbaine" loading="lazy"><span class="image-label">ABJ / 225</span></div><div class="story-copy reveal"><p class="eyebrow">Du bitume à ta vibe</p><h2>La rue nous inspire.<br><em>Le style nous rassemble.</em></h2><p>PLUG CITY 225, c’est la sélection qui te ressemble. Des pièces tendance, des prix accessibles et un service de proximité, pensé pour la vraie vie à Abidjan.</p><a href="#shop" class="button button-dark magnetic">Trouve ta pièce <span>↗</span></a><div class="stat-row" aria-label="Repères de la boutique"><div><strong id="product-stat" data-count="0">0</strong><span>Articles en sélection</span></div><div><strong id="category-stat" data-count="0">0</strong><span>Catégories représentées</span></div><div><strong>Abj</strong><span>Vibe locale</span></div></div></div></section>
     <section class="deal-banner" id="deals"><div class="deal-shape">✳</div><div class="deal-content reveal"><p class="eyebrow">Le bon plan est là</p><h2>Prêt à faire<br><em>la différence ?</em></h2><p>Repère ton prochain coup de cœur et commande directement avec nous sur WhatsApp.</p><a href="#shop" class="button button-light magnetic">Voir les nouveautés <span>↗</span></a></div><div class="deal-word">PLUG<br>CITY<br><span>225</span></div></section>
     <section class="contact-strip"><span class="live-dot"></span><p>Une question sur une taille ou une livraison ? <b>On est là pour toi.</b></p><a href="#contact" class="text-link dark-link">Parlons sur WhatsApp <span>↗</span></a></section>
   </main>
   <footer id="contact"><div class="footer-top"><a class="brand brand-footer" href="#top"><span class="brand-mark">P<span>✳</span></span><span class="brand-name">PLUG CITY <b>225</b></span></a><p>Abidjan dans les pas.<br>Le style dans la tête.</p><a class="button button-light magnetic" id="footer-whatsapp" href="#">Écris-nous sur WhatsApp <span>↗</span></a></div><div class="footer-bottom"><span>© <span id="year"></span> PLUG CITY 225 · ABIDJAN, CI</span><span>FAIT AVEC ✳ À ABIDJAN</span></div></footer>
   <div class="overlay" id="overlay"></div>
-  <aside class="drawer" id="cart-drawer" aria-label="Mon panier" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">Ta sélection</p><h2>Mon panier <span id="drawer-count">(0)</span></h2></div><button class="close-button" data-close aria-label="Fermer">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><p>Ton panier attend son premier coup de cœur.</p><button class="text-link dark-link" data-close>Continuer le shop ↗</button></div><div class="cart-summary" id="cart-summary"><div><span>Sous-total</span><strong id="cart-total">0 FCFA</strong></div><small>Livraison calculée avec la boutique sur WhatsApp.</small><button class="button button-dark checkout-button magnetic" id="checkout">Commander sur WhatsApp <span>↗</span></button></div></aside>
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Mon panier" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">Ta sélection</p><h2>Mon panier <span id="drawer-count">(0)</span></h2></div><button class="close-button" data-close aria-label="Fermer">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><p>Ton panier attend son premier coup de cœur.</p><button class="text-link dark-link" data-close>Continuer le shop ↗</button></div><div class="cart-summary" id="cart-summary"><div><span>Sous-total</span><strong id="cart-total">0 FCFA</strong></div><small>Livraison calculée avec la boutique sur WhatsApp.</small><button class="button button-dark checkout-button magnetic" id="checkout">Commander sur WhatsApp <span>↗</span></button></div></aside>
   <div class="toast" id="toast" role="status"></div>
 </body>
 </html>

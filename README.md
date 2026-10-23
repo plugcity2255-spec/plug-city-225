@@ -1,28 +1,13 @@
 # PLUG CITY 225
 
-Boutique de mode statique, conçue pour GitHub Pages : HTML, CSS et JavaScript sans dépendance à installer.
+Boutique statique de présentation et de commandes WhatsApp.
 
-## Voir le site sur son ordinateur
+## Publication
 
-Ouvre `index.html` dans un navigateur. Pour tester la commande WhatsApp, renseigne d’abord le numéro de la boutique dans **Gérer la boutique → Paramètres**.
+Le site est publié avec GitHub Pages. Chaque changement des fichiers du dépôt est ensuite déployé par GitHub Pages.
 
-## Publier sur GitHub Pages
+## Modifier le catalogue
 
-1. Envoie les fichiers `index.html`, `styles.css`, `app.js` et `README.md` dans le dépôt GitHub.
-2. Dans le dépôt, ouvre **Settings → Pages**.
-3. Dans **Build and deployment**, choisis **Deploy from a branch**, puis ta branche principale et le dossier `/ (root)`.
-4. Enregistre. GitHub Pages affichera l’adresse du site dans ce même écran après la publication.
+L’interface publique de gestion a été retirée. Pour modifier les produits, les prix ou les textes, il faut éditer le catalogue source dans `app-v2.js`, puis publier les changements sur GitHub. L’espace de gestion ne doit pas être remis dans le site public sans authentification côté serveur.
 
-Le site ne demande aucune installation. Le domaine GitHub Pages doit servir `index.html` depuis la racine du dépôt.
-
-## Gérer les articles
-
-Clique sur **Gérer la boutique** dans le pied de page. L’onglet **Produits** permet d’ajouter, modifier ou supprimer un article, sa photo, son prix, son prix promotionnel, sa catégorie, ses tailles et ses couleurs. L’onglet **Paramètres** permet de modifier le nom, le numéro WhatsApp, le slogan, le texte de présentation, la couleur d’accent et la bannière d’accueil.
-
-Les photos sont réduites automatiquement avant leur enregistrement. Les articles, le panier et les paramètres sont conservés dans le stockage local du navigateur.
-
-## Limite à connaître avant d’ouvrir la boutique au public
-
-GitHub Pages héberge des fichiers statiques. La gestion de cette première version enregistre les changements uniquement dans le navigateur qui les effectue : elle ne met pas à jour le catalogue vu par les clients et ne synchronise pas les appareils. Le panneau de gestion n’a pas de connexion protégée. Pour administrer une boutique publiée, partager les changements avec tous les clients et protéger l’accès, il faudra raccorder un service de données et d’authentification (par exemple Supabase ou Firebase) avant la mise en production.
-
-Le panier prépare un message WhatsApp ; il ne débite pas de paiement en ligne et ne calcule pas les frais de livraison.
+GitHub Pages héberge des fichiers statiques : les visiteurs peuvent consulter le code et les données livrés au navigateur. Les modifications faites dans les outils du navigateur ou le stockage local d’un client ne changent que sa propre copie du site. Pour une gestion privée synchronisée entre appareils, il faut connecter une API avec authentification et une base de données.
